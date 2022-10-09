@@ -32,23 +32,23 @@ function startGame(){
     conditionCheck();
     for(i=0; i<card.length; i++){
     document.getElementById("card"+(i+1)).innerText= card[i];
-    if(card[i]==1){
+    if(card[i] == 1){
         document.getElementById("card"+(i+1)).innerText = "A";
     }
-    if(card[i]==11){
+    if(card[i] == 11){
         document.getElementById("card"+(i+1)).innerText = "J";
     }
-    if(card[i]==12){
+    if(card[i] == 12){
         document.getElementById("card"+(i+1)).innerText = "Q";
     }
-    if(card[i]==13){
+    if(card[i] == 13){
         document.getElementById("card"+(i+1)).innerText = "K";
     }
     }
     for(i=3; i<6; i++){
     document.getElementById("card"+i).innerText=" ";}
     document.getElementById("sum").innerText= "Sum: "+sum;
-    j=1;//for function newGame
+    j=1;//for function newCard
     }
 
 
@@ -65,6 +65,18 @@ function newCard(){
         conditionCheck();
         document.getElementById("sum").innerText= "Sum: "+sum;
      document.getElementById("card"+(i+1)).innerText= card[i];
+     if(card[i] == 1){
+        document.getElementById("card"+(i+1)).innerText = "A";
+    }
+    if(card[i] == 11){
+        document.getElementById("card"+(i+1)).innerText = "J";
+    }
+    if(card[i] == 12){
+        document.getElementById("card"+(i+1)).innerText = "Q";
+    }
+    if(card[i] == 13){
+        document.getElementById("card"+(i+1)).innerText = "K";
+    }
     
     }
 }
