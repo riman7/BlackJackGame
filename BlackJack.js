@@ -1,7 +1,7 @@
 let sum;
 let alive = false, blackJack=false;
 function randomCard(){
-    let card = Math.floor(Math.random()*11 +2);
+    let card = Math.floor(Math.random() * 13 + 1);
     return card;
 }
 wallet = 100;
@@ -31,9 +31,22 @@ function startGame(){
     sum = card[0] + card[1];
     conditionCheck();
     for(i=0; i<card.length; i++){
-    document.getElementById("card"+(i+1)).innerText= card[i];}
+    document.getElementById("card"+(i+1)).innerText= card[i];
+    if(card[i]==1){
+        document.getElementById("card"+(i+1)).innerText = "A";
+    }
+    if(card[i]==11){
+        document.getElementById("card"+(i+1)).innerText = "J";
+    }
+    if(card[i]==12){
+        document.getElementById("card"+(i+1)).innerText = "Q";
+    }
+    if(card[i]==13){
+        document.getElementById("card"+(i+1)).innerText = "K";
+    }
+    }
     for(i=3; i<6; i++){
-        document.getElementById("card"+i).innerText=" ";}
+    document.getElementById("card"+i).innerText=" ";}
     document.getElementById("sum").innerText= "Sum: "+sum;
     j=1;//for function newGame
     }

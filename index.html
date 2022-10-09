@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <title>Black Jack Game</title>
-    <link rel="stylesheet" href="/BLACKJACKGAME.GITHUB.IO/BlackJack.css">
+    <link rel="stylesheet" href="./BlackJack.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Black Jack Game</h1>
@@ -15,11 +18,11 @@
         <div class="results" id="results">Results!!</div>
         <div class="cards">
            <section> Cards: </section>
-           <section id="card1" class="blackCard"></section>
-           <section id="card2" class="redCard"></section>
-           <section id="card3" class="blackCard"></section>
-           <section id="card4" class="redCard"></section>
-           <section id="card5" class="blackCard"></section>
+           <section id="card1" class="card blackCard"></section>
+           <section id="card2" class="card redCard"></section>
+           <section id="card3" class="card blackCard"></section>
+           <section id="card4" class="card redCard"></section>
+           <section id="card5" class="card blackCard"></section>
         </div>
         <div class="sum" id="sum">
             Sum:
@@ -34,19 +37,22 @@
         </div>
 
     </Div>
-<h2>Rules of Blackjack</h2>
-<p>
-   <ol> 
-    <li>Here, Ace(A)=11 </li>
-    <li>Each players attemps to get total 21 or close to 21.</li>
-    <li>Player who got exact 21 is BlACKJACK or WINNER</li>
-    <li>Player whose total sum is over 21 is out and cannot continue the game.</li>
-    <li>You will get <b>$25</b> on blackjack</li>
-    <li>And you will lose <b>$15</b> in your each loss</li>
-   </ol>
-</p>
 
-    <script src="/BlackJack.js"></script>
-    <footer><b>Developed By: Riman Maharjan (Mr.7)</b></footer>
+<div class="rules">
+    <h2>Rules of Blackjack</h2>
+        <ol> 
+            <li>Here, Ace(A)=1, Jack(J)=11, Queen(Q)=12 and King(K)=13 </li>
+            <li>Each players attemps to get total 21 or close to 21.</li>
+            <li>Player who got exact 21 is BlACKJACK or WINNER</li>
+            <li>Player whose total sum is over 21 is out and cannot continue the game.</li>
+            <li>Initially, you will have $100</li>
+            <li>You will get <b>$25</b> on blackjack</li>
+            <li>And you will lose <b>$15</b> in your each loss <br>
+            You can always press new game to save your money if you doubt that your next card would lead you to lose game.</li>
+        </ol>
+</div>
+
+    <script src="./BlackJack.js"></script>
+    <footer>Developed By: <b> Riman Maharjan (Mr.7)</b></footer>
 </body>
 </html>
