@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Black Jack Game</title>
+    <link rel="stylesheet" href="/BlackJack.css">
+</head>
+<body>
+    <h1>Black Jack Game</h1>
+    <Div id="game">
+        <div class="wlc">
+            Welcome to the GAME
+        </div>
+        <div class="img1">
+        <img src="/Penalty_cards_in_Black_Maria_-_IMG_7733-removebg-preview.png" alt=""></div>
+        <div class="results" id="results">Results!!</div>
+        <div class="cards">
+           <section> Cards: </section>
+           <section id="card1" class="blackCard"></section>
+           <section id="card2" class="redCard"></section>
+           <section id="card3" class="blackCard"></section>
+           <section id="card4" class="redCard"></section>
+           <section id="card5" class="blackCard"></section>
+        </div>
+        <div class="sum" id="sum">
+            Sum:
+        </div>
+        <div class="startAndNew">
+            <button id="startGame" onclick="startGame()">Start Game</button>
+            <button id="newCard" onclick="newCard()">New Card</button>
+        </div>
+        <div class="wallet">
+            Your Wallet: $<section id="wallet">100</section>
+            <div class="img2"><img src="/casino coin.png" alt="casino coin"></div>
+        </div>
+
+    </Div>
+<h2>Rules of Blackjack</h2>
+<p>
+   <ol> 
+    <li>Here, Ace(A)=11 </li>
+    <li>Each players attemps to get total 21 or close to 21.</li>
+    <li>Player who got exact 21 is BlACKJACK or WINNER</li>
+    <li>Player whose total sum is over 21 is out and cannot continue the game.</li>
+    <li>You will get <b>$25</b> on blackjack</li>
+    <li>And you will lose <b>$15</b> in your each loss</li>
+   </ol>
+</p>
+
+    <script src="/BlackJack.js"></script>
+    <footer><b>Developed By: Riman Maharjan (Mr.7)</b></footer>
+</body>
+</html>
