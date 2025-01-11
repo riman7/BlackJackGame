@@ -16,7 +16,7 @@ function conditionCheck(){
         document.getElementById("wallet").innerText = wallet;
     }
     else if(sum > 21){
-        results = "You are lose!!"
+        results = "You lose!!"
         alive = false;
         wallet -= 15;
         document.getElementById("wallet").innerText = wallet;
